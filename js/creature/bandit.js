@@ -1,14 +1,15 @@
-export class enemyConstructor {
-    constructor() {
-        this._name = "nameHere"; //add random name function here
-        this._hitPoints = 100;
-        this._accuracy = 100;
-        this._defense = 100;
-        this._damageOut = 10;
-        this._energy = 100;
-        this._alive = true; 
-    } 
-    
+export class banditConstructor{
+    constructor(name = "Mr. Bandit", hitPoints = 75, energyPoints = 80, 
+        accuracy = 50, defense = 50, damageOut = 6, alive = true){   
+            this._name = name;
+            this._hitPoints = hitPoints;
+            this._energyPoints = energyPoints;
+            this._accuracy = accuracy;
+            this._defense = defense;
+            this._damageOut = damageOut;
+            this._alive = alive;   
+    }
+        
     set name(value) { if (value != null) {this._name = value;}}
     get name() { return this._name; }
 
@@ -31,3 +32,4 @@ export class enemyConstructor {
     get alive() {return this._alive}
 
 }
+
