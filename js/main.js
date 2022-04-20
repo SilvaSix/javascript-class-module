@@ -1,5 +1,4 @@
 import * as Enemy from "./creature/enemy.js";
-import * as Bandit from "./creature/bandit.js";
 import * as Player from "./creature/player.js";
 
 // testing here
@@ -21,12 +20,6 @@ console.log(enemy1.alive);
 console.log(enemy1.defense);
 
 console.log(".............................");
-
-let bandit1 = new Bandit.banditConstructor();
-
-console.log(bandit1.damageOut);
-
-console.log(bandit1.alive);
 
 console.log(".............................");
 
